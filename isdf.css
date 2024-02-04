@@ -1,0 +1,72 @@
+
+body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+    font-style:normal;
+    
+}
+ .bg{
+   color: black;
+   font-size: larger;
+  
+}
+.asx{
+    color: gold;
+   font-size: larger;
+   
+}
+.bg , .asx{
+background-color:rgb(54, 31, 116);
+width:300px;
+/*height: 330px;*/
+overflow: auto;
+margin: 20px ;
+padding: 20px;
+text-align: center;
+text-shadow: 20px 30px 1px rebeccapurple;
+direction: rtl;
+text-decoration: overline;
+text-transform: uppercase;
+
+}
+
+.hgji{
+    width:400px;
+    background-color: brown;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    cursor: pointer;
+   
+}
+a , .hgji{
+    text-decoration: none;
+}
+.er{
+    width: 700px;
+    height: 700px;
+/*background-repeat: no-repeat;*/
+ /*   background-image: url(IMG_20220930_225655_182.jpg);*/
+    background-size: cover;
+    background-attachment:scroll;
+    border:1px solid red;
+    padding: 20px;
+    color: rgb(255, 0, 4);
+    margin: 20px;
+}
+p,.er{
+    display: inline;
+    width: calc(92/8);
+    padding-left:3%;
+   float: left;
+}
+.kl{
+    clear: both;
+}
+button{
+    position:sticky;
+    top: 5000px;
+    left: 1440px;
+}
+.bg h3{
+    color: #fff;
+}

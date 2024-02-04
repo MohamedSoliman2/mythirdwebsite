@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            margin-top: 50px;
+            margin-left: 60px;
+            background-color: rgb(219, 223, 223);
+            height: 100px;
+            margin-right: 60px;
+            width: 690px;
+            margin-bottom: 50px;
+        }
+        #add{
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-right: 30px;
+            width: 400px;
+            height: 50px;
+            border-radius: 20px;
+        }
+        #submit{
+            height: 50px;
+    width: 100px;
+    background-color: rgb(246, 76, 76);
+    text-transform: capitalize;
+    border-radius: 10px;
+    color: white;
+        }
+        .tasks{
+            margin-top: 50px;
+            margin-left: 60px;
+            background-color: rgb(219, 223, 223);
+            height: 100px;
+            margin-right: 60px;
+            width: 640px;
+        }
+        p {
+margin-top: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+    <form action="asdxc.html">
+        <input type="text" required  placeholder="add task" id="add" class="sd" >
+  
+     <input type="submit" id="submit" class="wer" value="Add task">
+    </form>
+    </div>
+ <!--   <div class="tasks">
+
+    </div>
+-->
+    <script>
+       $add=document.querySelector('#submit');
+        $input=document.querySelector('#add');
+        $form=document.querySelector('.form');
+        $form2=document.querySelector('.tasks');
+        $add.onclick=function(e){
+            $x=window.localStorage.length;
+            $a=$x;
+            //console.table($x);
+          //e.preventDefault();
+            if($input.value !=''){
+            $input=document.querySelector('#add');
+           window.localStorage[$a + 1]=$input.value;
+           $e=document.createElement('div');
+           $d=document.createElement('p');
+           $x=document.createTextNode($input.value);
+           $d.appendChild($x);
+           console.log($d);
+          $e.appendChild($d);
+           //document.body.appendChild($d);
+           $e.style.cssText='display:flex;   margin-top: 50px; margin-left: 60px;background-color: rgb(219, 223, 223);height: 100px;margin-right: 60px;width: 700px;';
+           $d.style.cssText="   margin-top: 20px; margin-left: 40px; margin-right: 30px; width: 400; height: 50px;border-radius: 20px;    margin-top: 19px;background-color: whitesmoke; width: 400px;     margin-left: 40px;    margin-right: 30px;padding-top: 30px;padding-left: 30px; ";
+           $zd=document.createElement('input');
+           $zd.setAttribute('type','submit');
+           $zd.setAttribute('value','remove');
+           //document.body.appendChild($zd);
+           $e.appendChild($zd);
+           $zd.style.cssText=" margin-top:23px;   height: 50px; width: 100px;background-color: rgb(246, 76, 76);text-transform: capitalize;border-radius: 10px;color: white;";
+           document.body.appendChild($e);
+        }
+       
+    }
+        $xq=window.localStorage.length;
+$qa=$xq;
+for($i=1;$i<=$qa;$i++){      
+    if(window.localStorage.key($i-1)==null){
+        $qa++;
+        console.log($i);
+};
+
+    $e=document.createElement('div');
+           $d=document.createElement('p');
+           $x=document.createTextNode(window.localStorage[$i]);
+           $d.appendChild($x);
+           //console.log($d);
+          $e.appendChild($d);
+           $e.style.cssText='display:flex;   margin-top: 50px; margin-left: 60px;background-color: rgb(219, 223, 223);height: 100px;margin-right: 60px;width: 700px;';
+           $d.style.cssText="   margin-top: 20px; margin-left: 40px; margin-right: 30px; width: 400; height: 50px;border-radius: 20px;    margin-top: 19px;background-color: whitesmoke; width: 400px;     margin-left: 40px;    margin-right: 30px;padding-top: 30px;padding-left: 30px; ";
+           $zd=document.createElement('input');
+           $zd.setAttribute('type','submit');
+           $zd.setAttribute('value','remove');
+           $zd.setAttribute('id',$i);
+    
+           $e.appendChild($zd);
+           $zd.style.cssText=" margin-top:23px;   height: 50px; width: 100px;background-color: rgb(246, 76, 76);text-transform: capitalize;border-radius: 10px;color: white;";
+           document.body.appendChild($e);
+           //console.log($zd);
+           console.log($i);
+          
+}
+
+
+
+document.addEventListener('click',function(e){
+    $xd=e.target.id;
+if($xd>0){
+window.localStorage.removeItem($xd);
+location.reload();
+}});
+
+
+/*for($i=1;$i<=$qa;$i++){
+    console.log(window.localStorage.key($i-1));
+    console.log($i);
+        /*console.log('hi');
+}}*/
+
+
+    </script>
+</body>
+</html>

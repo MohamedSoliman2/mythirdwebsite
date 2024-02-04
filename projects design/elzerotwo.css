@@ -1,0 +1,783 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    height: 1000vh;
+}
+:root{
+    --dol:rgb(15 116 143 / 70%);
+}
+.continer{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+@media(min-width:768px){
+    .continer{
+        width:750px;
+    }
+}
+@media(min-width:992px){
+    .continer{
+        width:970px;
+    }
+}
+@media(min-width:1200px){
+    .continer{
+        width: 1170px;
+    }
+
+}
+.yuh{
+    position: relative; 
+}
+.header{
+background-image:url('../landing (1).jpg');  
+filter: brightness(50%);
+height: 100vh;
+background-repeat: no-repeat;
+position: relative;
+background-size: cover;
+}
+.header /* .yuh*/ .ty{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-content: center;
+    height: 100px;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    color: white;
+}
+#wecv{
+    position: absolute;
+    top: 10%;
+    width: 60%;
+}
+/*.header */
+.header .ty  .nav{
+    margin-left: 5vw;
+}
+.header /*.yuh*/ .ty .nav ul{
+    display: flex;
+    justify-content:flex-end;
+    list-style: none;
+    /*margin-left: 300px;*/
+}
+.header /*.yuh*/ .ty .nav ul li{
+    margin-left: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.header /*.yuh*/ .ty .los{
+    font-size: 23px;
+    color: white;
+    position: relative;
+    margin-left:40px;
+}
+.header /*.yuh*/ .ty .los::before{
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color:white;
+    left: -20px;
+    top: -10px;
+}
+ .lor{
+background-color: var(--dol);
+position: absolute;
+top: 30%;
+height: 400px;
+width: 500px;
+}
+/*.errt{
+    margin-left: 20vw;
+}*/
+.lor h1:first-child{
+    margin-top: 70px;
+    color: white;
+    margin-left: 20px;
+}
+ .lor h1{
+    color: white;
+    margin-left: 20px;
+    width: 370px;
+}
+.lor p{
+    color: white;
+    line-height: 1.7;
+    margin-left: 20px;
+    width: 370px;
+
+}
+ #o{
+position:absolute;
+right: 15px;
+top: 45%;
+color: white;
+}
+#er{
+    position: absolute;
+    left: 15px;  
+    top: 45%;
+    color: white;
+}
+.loza i:first-child{
+    position: absolute;
+    left: 50%;  
+    top: 99%;
+    color: white;
+}
+.loza i:last-child{
+    position: absolute;
+    left: 46%;  
+    top: 99%;
+    color: white;
+}
+.loza i:nth-child(2){
+    position: absolute;
+    left: 48%;  
+    top: 99%;
+    color: rgb(196, 36, 36);
+   /* color:rgba(5, 36, 45, 0.7);*/
+ 
+}
+.services .text h2{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 2px;
+    margin-bottom: 59px;
+}
+.services .text{
+    position: relative;
+}
+.services .text hr{
+    width: 200px;
+    text-align: center;
+    border:1px solid #090909 ;
+}
+.services .text span{
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: 28%;
+    left: 49%;
+    background-color: transparent;
+}
+.services .text p{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 59px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loe{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px 130px;
+}
+.loe .we{
+    display: flex;
+}
+
+.loe .we h3{
+    color: #19c8fa;
+    font-size: 24px;
+    font-weight: 600;
+}
+.loe .we .ted{
+    margin-left: 40px;
+    margin-top: -20px;
+}
+.loe .one .we{
+    margin-top: 50px;
+}
+.loe .two .we{
+    margin-top: 50px;
+}
+.loe .we .ted p{
+    line-height: 2;
+}
+
+
+
+
+
+.endser{
+    margin-top: 80px;
+    background-image: url(../design-features.jpg);
+    overflow: hidden;
+    filter: brightness(60%);
+}
+.endser .lopya{
+    display: flex;
+    justify-content: space-between;
+}
+.endser {
+    height:70vh;
+    /*height: fit-content;*/
+}
+.endser .lopya .imf img{
+    margin-top: 200px;
+}
+.endser .lopya .trew{
+    background-color: rgb(15 116 143 / 70%);
+    margin-top: 230px;
+    height: fit-content;
+    width: 600px;  
+    margin-left: 30px;  
+}
+.endser .lopya .trew .lol{
+    display: flex;
+    color: white;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.endser .lopya .trew .lol i{
+    font-size: 20px;
+}
+.endser .lopya .trew .lol p{
+    margin-top: -1px;
+    margin-left: 30px;
+}
+.endser h1{
+    color: white;
+    margin-left: 30px;
+}
+/*protofolie*/
+.protofolie .text1 h2{
+        text-align: center;
+        margin-top: 80px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 2px;
+        margin-bottom: 59px;
+    }
+
+
+
+
+
+
+     .text1{
+        position: relative;
+    }
+     .text1 hr{
+        width: 200px;
+        text-align: center;
+        border:1px solid #090909 ;
+    }
+     .text1 span{
+        width: 15px;
+        height: 15px;
+        border: 2px solid black;
+        border-radius: 50%;
+        text-align: center;
+        position: absolute;
+        top: 28%;
+        left: 49%;
+        background-color: transparent;
+    }
+     .text1 p{
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 59px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .maker1{
+        margin-top: 80px;
+    }
+    .maker{
+        margin-top: 40px;
+        display: flex;
+        margin-left: 28vw;
+        margin-right: auto;
+    }
+    .maker p{
+        margin-left: 20px;
+        text-transform: capitalize;
+    }
+    .maker p:first-child{
+        width: 40px;
+        height: 40px;
+        background-color: #19c8fa;
+    }
+    .maker .erc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+
+
+    .rtyx{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    .rtyx .loidb{
+        width: calc(100% /4);
+        position: relative;
+        transition: all 3s 0.1s;
+    }
+    .rtyx .loidb img{
+        height: 300px;
+        max-width: 100%;
+    }
+    .rtyx .loidb p{
+        display: none;
+        background-color: white;
+        transition: all 3s 1s;
+        position: absolute;
+        z-index: 2;
+        width: 380px;
+        height: 80px;
+        color: #19c8fa;
+    }
+    .rtyx .loidb p:last-child{
+        color: #19c8fa;
+    }
+    .rtyx .loidb:hover p{
+      display: block;
+      transform: translateY(-100px);
+    }
+    .rtyx .loidb:hover img{
+        transform: rotate(1deg);
+        /*transform: skewX(-20deg);*/
+       /* transform: scaleY(1.1);*/
+    }
+    .btn {
+        margin-left: 47vw;
+        margin-top: 6vh;
+
+    }
+    .btn button{
+        width: 90px;
+        height: 50px;
+        background-color: #19c8fa;
+        color: white;
+        outline: none;
+        border: 1px solid #19c8fa; 
+        font-size: 23px;
+        text-transform: capitalize;
+    }
+    .dol{
+        position: relative;
+        margin-top: 70px;
+    }
+    .dol .loerx video{
+        width:100%;
+        filter: brightness(50%);
+    }
+    .dol .text3{
+        width: 100%;
+        background-color: rgb(15 116 143 / 70%);
+        text-align: center;
+        color: white;
+        height: 180px;
+        position: absolute;
+        top: 40%;
+        z-index: 2;
+
+    }
+    .dol .text3 h2{
+        letter-spacing: -1px;
+    }
+    .dol .text3 button{
+        width: 140px;
+        height: 50px;
+        background-color: #000000;
+        color: white;
+        outline: none;
+        border: 1px solid #12bceb; 
+        font-size: 23px;
+        text-transform: capitalize;
+    }
+    .imager{
+        text-align: center;
+        overflow: hidden;
+        height: 260px;
+        margin-top: 60px;
+    }
+.aboutw{
+    background-image: url(../stats.png);
+    filter: brightness(50%);
+    text-align: center;
+    height: 60vh;
+    align-items: center;
+    /*position: relative;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.aboutw .lom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color:rgb(15 116 143 / 70%);
+    filter: brightness(100%);
+}
+.aboutw .lom i{
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*font-size: 30px;*/
+    text-align: center;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.aboutw .lom{
+    color: white;
+}
+.aboutw .lom h1{
+    font-size: 43px;
+}
+
+.alshougal{
+    margin-top: 100px;
+    /*position: relative;*/
+}
+.conr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.conr .low{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.conr .low h1{
+    font-size: 19px;
+    margin-bottom: 50px;
+    font-weight: 400;
+
+}
+
+.conr .low  h4{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+.conr .low .ome{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+}
+.conr .low .ome img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#erx{
+    position: absolute;
+    top: 80%;
+    right: 0%;
+}
+#ery{
+    position: absolute;
+    top: 80%;
+    right: 0%;
+}
+.ld{
+    width: 400px;
+    margin-left: 30px;
+    margin-top: -15px;
+    line-height: 32px;
+}
+.low hr{
+    margin-top: 30px;
+    width: 350px;
+    margin-right: 20px;
+}
+/*.logos{
+    margin-top: 60px;
+}*/
+.logos span{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 60px;
+    margin-left: 15px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+.logos span:nth-child(2){
+    background-color: #12bceb;
+    border-color: #19c8fa;
+}
+.low .loi9{
+    margin-top: 45px;
+}
+.low .loi9 h5{
+    font-size: 24px;
+    font-weight: 300;
+    text-transform:uppercase;
+    margin-left: -382px;
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+.low .loi9 p{
+    width:500px ;
+    height: 50px;
+    border: 1px solid #12bceb;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: var(--dol);
+}
+.lortw{
+    background-image: url('../quote.jpg');
+    filter: brightness(30%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    /*position: relative;*/
+}
+.loper{
+    position: relative;
+}
+/*.lortw*/ .tert{
+    position: absolute;
+    color: white;
+    top: 35%;
+    left: 20%;
+    font-weight: 800;
+}
+/*.lortw*/ .tert h3{
+    font-size: 30px;
+}
+/*.lortw*/ .tert p{
+    position: absolute;
+    top: 75%;
+    left: 34%;
+}
+.err1{
+    position: relative;
+}
+.lrohg .kix{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lrohg .kix .lopc1{
+background-color:#fcfcfc;
+width: 20%;
+text-align: center;
+}
+.lrohg .kix .lopc1 h3{
+    text-transform: uppercase;
+}
+.lrohg .kix .lopc1 h2{
+    font-size: 50px;
+}
+.lrohg{
+    /*position: relative;*/
+    margin-top: 100px;
+}
+.lrohg .kix .lopc1 #d1,#d2,#d3,#d4{
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    font-size: 21px;
+}
+.lrohg .kix .lopc1 {
+    position: relative;
+}
+#dole{
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    font-size: 27px;
+}
+.lrohg .kix .lopc1 hr{
+    border-color: #12bceb;
+    border-width: 1px;
+    border-style: solid;
+    width: 70%;
+}
+.lrohg .kix .lopc1 #erxc{
+    border-color: #12bceb;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+}
+.lrohg .kix .lopc1 button{
+    background-color: white;
+    color: #026a87;
+    outline: none;
+    border: 1px solid #12bceb;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+.lrohg .kix .lopc1 p{
+    margin-top:20px ;
+}
+.louq{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 22px;
+}
+.louq button{
+    width: 140px;
+    height: 50px;
+    background-color:#19c8fa;
+    color: white;
+    outline: none;
+    border: 1px solid #12bceb; 
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.lop{
+    position: relative;
+}
+.lop .back{
+    width: 100%;
+    height: 300px;
+    background-image: url(../subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   filter: brightness(30%); 
+}
+.lop .jkop{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+}
+.lop .jkop .form form input{
+width: 200px;
+height: 60px;
+background-color: transparent;
+border: 2px solid white;
+color: white;
+font-size: 20px;
+padding-left:60px;
+border-right-color:transparent ;
+}
+.lop .jkop .ko {
+    color: white;
+    font-size: 20px;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: -10px;
+}
+.lop .jkop i{
+    color: white;
+    font-size: larger;
+    position: absolute;
+    top:22%;
+    left: 2%;
+}
+.lop{
+margin-top: 100px;
+
+}
+.lop .jkop .form button{
+    width: 140px;
+    height: 60px;
+    background-color:#19c8fa;
+    color: white;
+    outline: none;
+    border: 2px solid white; 
+    font-size: 23px;
+    text-transform: capitalize; 
+    border-left-color:transparent ; 
+}
+.forqm input{
+    width: 50vw;
+    height: 56px;
+    margin-top: 56px;
+    padding-left: 15px;
+    text-transform: capitalize;
+    border: 1px solid rgb(231, 231, 231); 
+}
+.forqm #ert{
+    width: 140px;
+    height: 60px;
+    background-color:#19c8fa;
+    color: white;
+    outline: none;
+    border: 2px solid white; 
+    font-size: 23px;
+    text-transform: capitalize; 
+    border-left-color:transparent ; 
+    margin-left: 46vw;
+}
+.forqm #tes{
+    width: 50vw;
+    height: 200px;
+    margin-top: 56px;
+    padding-left: 15px;
+text-transform: capitalize;
+}
+.lomz{
+    display: flex;
+    justify-content: space-between;
+}
+.lm h2 ,.kloi h2{
+    margin-top:56px;
+    font-size: 20px;
+}
+.lm{
+    margin-top: 60px;
+}
+.footer{
+    margin-top: 100px;
+    position: relative;
+}
+.footer .back1{
+    width: 100%;
+    height: 400px;
+    background-image: url(../subscribe.jpg);
+    background-repeat: no-repeat;
+   filter: brightness(30%); 
+   background-size: cover;
+}
+.footer .text34{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    color: white;
+}
+.footer .text34 img{
+    margin-bottom: 40px;
+}
+.footer .text34 h4{
+    font-size: 24px;
+}
+.footer .text34 .iconew i{
+    margin-left: 12px;
+}
+.footer .text34 .iconew {
+    margin-bottom: 70px;
+}
+.footer .text34 span{
+    color: #12bceb;
+}
